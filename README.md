@@ -12,20 +12,20 @@ This is a **secondary reanalysis of published effect-size records**, not a new f
 
 ## Repository structure
 
-- `01_SOURCE_DATA/` — publisher-supplied Supplementary Table S1 (XLSX) and value-preserving CSV export, with source attribution.
-- `02_EMPIRICAL_ANALYSIS/` — Python script, requirements, run manifests, derived CSV outputs and QA workbooks.
+- `00_README/` — extended documentation, Zenodo metadata draft, GitHub release notes and upload instructions.
+- `01_SOURCE_DATA/` — publisher-supplied Supplementary Table S1 workbook and value-preserving CSV export, with source attribution.
+- `02_EMPIRICAL_ANALYSIS/` — Python script, requirements, run manifests, outputs and QA workbooks.
 - `03_NUMERICAL_VALIDATION/` — scalar constant-order and variable-order numerical-verification scripts, outputs and run log. These tests do not calibrate or validate the crop–microbe–nitrogen biological model.
 - `04_FIGURES/` — figures associated with the reconciled empirical results.
-- `05_LICENSES/` — proposed file-scope licence mapping and release approval requirements.
+- `05_LICENSES/` — file-scope licence map, MIT licence text and author approval register.
 - `06_CHECKSUMS/` — SHA-256 manifest for repository files (the manifest excludes its own checksum).
-- `00_README/` — extended documentation, Zenodo metadata draft and upload notes.
 - `CITATION.cff` — citation metadata for this versioned research object.
 
 ## Main source
 
 Azarbad H, Junker RR. Biological and experimental factors that define the effectiveness of microbial inoculation on plant traits: a meta-analysis. *ISME Communications*. 2024;4(1):ycae122. https://doi.org/10.1093/ismeco/ycae122.
 
-The included source workbook is the publisher-provided Supplementary Table S1 and is attributed to the original authors. The source article is distributed under CC BY 4.0. See `01_SOURCE_DATA/SOURCE_ATTRIBUTION.md` and `05_LICENSES/LICENSES.md`.
+The included source workbook is the publisher-provided Supplementary Table S1. The source article is distributed under CC BY 4.0. The workbook is included unchanged with attribution; the accompanying CSV is a value-preserving format conversion. See `01_SOURCE_DATA/SOURCE_ATTRIBUTION.md` and `05_LICENSES/LICENSES.md`.
 
 ## Reproduce the empirical analysis
 
@@ -61,12 +61,18 @@ See `03_NUMERICAL_VALIDATION/README.md` before interpreting these numerical test
 
 ## Citation
 
-Please cite the version-specific Zenodo record after its publication, together with the original Azarbad and Junker (2024) source article. No Zenodo DOI has been assigned to this release yet. The final DOI will be added to the repository metadata and manuscript after the record is published.
+Please cite the version-specific Zenodo record after its publication, together with the original Azarbad and Junker (2024) source article. The Zenodo DOI has not yet been assigned to this release. The corresponding author will update the repository citation metadata and manuscript after publication.
 
-## Licensing
+## Licensing and author approval
 
-This repository has mixed rights. Do not assume that every file has one common licence. Read `05_LICENSES/LICENSES.md` and `05_LICENSES/RIGHTSHOLDER_LICENCE_APPROVAL_REQUIRED.txt`. The proposed MIT licence for new scripts and CC BY 4.0 licence for new outputs/documentation require confirmation by the relevant rightsholders before public release. The source workbook remains subject to its original CC BY 4.0 terms and attribution.
+This repository uses a **mixed-licence arrangement**; do not assume that all files have one common licence:
+
+- **Original source workbook and its value-preserving CSV export:** CC BY 4.0, with attribution to Azarbad and Junker (2024) and an indication that the CSV is a format conversion.
+- **Project-authored Python scripts** in `02_EMPIRICAL_ANALYSIS/scripts/` and `03_NUMERICAL_VALIDATION/scripts/`: MIT License.
+- **Project-authored figures, derived outputs, QA materials and documentation:** CC BY 4.0.
+
+The corresponding author reports that all 15 manuscript authors have provided written email approval for public release and this file-scope licence arrangement. The approval register is `05_LICENSES/AUTHOR_APPROVAL_AND_RIGHTS_REGISTER.md`; the original emails are retained privately. Third-party software dependencies remain under their respective upstream licences. The complete file map and licence terms are in `05_LICENSES/LICENSES.md` and `05_LICENSES/MIT_LICENSE.txt`.
 
 ## Versioning and archive
 
-The intended initial release tag is `v1.0.0`. For each future public release, update the version, changelog, `CITATION.cff` and checksum manifest before tagging. If using Zenodo's GitHub integration, be aware that Zenodo's GitHub workflow creates a **Software** record from a GitHub release. For a repository record whose primary resource type should explicitly be **Dataset**, the authors may instead create a manual Zenodo dataset deposit and cite/link this GitHub repository in its related identifiers. See `00_README/ZENODO_UPLOAD_STEPS.md`.
+The initial release tag is `v1.0.0`. For each future public release, update the version, changelog, `CITATION.cff` and checksum manifest before tagging. The recommended DOI route for this mixed research dataset and code archive is a manual Zenodo deposit with resource type **Dataset**. See `00_README/ZENODO_UPLOAD_STEPS.md`.
