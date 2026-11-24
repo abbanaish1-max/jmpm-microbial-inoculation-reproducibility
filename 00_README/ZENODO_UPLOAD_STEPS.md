@@ -1,38 +1,52 @@
-# GitHub and Zenodo publication workflow
+# GitHub release and Zenodo publication workflow
 
-## Recommended route for this mixed dataset + code package
+## Current release status
 
-1. Prepare and review this repository in GitHub first.
-2. Keep it private while the authors confirm the per-file licence mapping in `05_LICENSES/`.
-3. Once the rightsholders approve the licences and the content, make the repository public.
-4. For a DOI whose Zenodo resource type is explicitly **Dataset**, sign in to Zenodo and create a **New upload** manually. Upload the release ZIP `JMPM_Zenodo_Reproducibility_Package_v1.0.0.zip` (or a final checksum-verified ZIP built from this repository), choose resource type Dataset, and enter the creators, description, keywords, source-paper relation and the GitHub repository URL as a related identifier. Apply the approved mixed-licence mapping and publish only after preview.
-5. Copy the DOI assigned at publication into the manuscript's Data and Code Availability statement, this repository README, and `CITATION.cff`. Use the exact version DOI for this release.
+The corresponding author reports that all 15 manuscript authors have provided written email approval for public release of the package and the file-scope licence mapping. The evidence summary is in `05_LICENSES/AUTHOR_APPROVAL_AND_RIGHTS_REGISTER.md`; the email correspondence is retained privately. The final licence map is `05_LICENSES/LICENSES.md`.
 
-## Optional GitHub-to-Zenodo automatic integration
+## Part A — Finalise and publish the GitHub repository
 
-Zenodo's GitHub integration archives a GitHub **release** as a **Software record**. Use this route if the authors also want a separately citable software release DOI:
+1. Review the root README, source attribution, author approval register, licence map, Zenodo metadata draft and checksum manifest.
+2. Confirm the local GitHub Desktop working tree has no uncommitted changes and that the remote repository contains the final commit.
+3. On GitHub, change the repository visibility from **Private** to **Public** only after the final content review. In repository Settings, open the Danger Zone, choose Change visibility, select Public and confirm the repository name when prompted.
+4. Open the repository's Releases page and choose **Draft a new release**.
+5. Create tag `v1.0.0` targeting the `main` branch. Use the title `JMPM Reproducibility Package v1.0.0`.
+6. Paste the text from `00_README/GITHUB_RELEASE_NOTES_v1.0.0.md`, review the tag and target, and publish the release.
+7. Open the published release and download its **Source code (zip)**. This is the versioned archive associated with tag `v1.0.0`.
 
-1. Link GitHub to Zenodo through Zenodo profile menu > Linked accounts.
-2. In Zenodo profile menu > GitHub, click Sync now and enable the public repository.
-3. In GitHub, create a release from tag `v1.0.0` after all files and metadata are committed.
-4. Wait for Zenodo to ingest the release; open the DOI shown for the release and verify its files, metadata and archival status.
+GitHub's official release instructions: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
 
-Do not confuse the Software DOI from this integration with the Dataset DOI from a manual Zenodo upload. Avoid publishing two records unless the authors intentionally want both records and cross-reference them.
+## Part B — Create the Dataset DOI on Zenodo (recommended route)
 
-## Official guidance
+For this mixed research-data and software package, create a manual Zenodo deposit with resource type **Dataset**:
 
-- Zenodo account linking: https://help.zenodo.org/docs/profile/linking-accounts/
-- Enable GitHub repository: https://help.zenodo.org/docs/github/enable-repository/
-- Archive GitHub release (Software record): https://help.zenodo.org/docs/github/archive-software/github-upload/
-- Zenodo create new upload (Dataset route): https://help.zenodo.org/docs/deposit/create-new-upload/
-- Zenodo licences and mixed-licence deposits: https://help.zenodo.org/docs/deposit/describe-records/licenses/
-- GitHub create release: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
+1. Sign in to https://zenodo.org and select **New upload**.
+2. Upload the GitHub release's `Source code (zip)` file.
+3. Set resource type to **Dataset**, access to **Open**, and version to `1.0.0`.
+4. Copy the title, description, all 15 creators in the approved author order, affiliations, keywords, funding note and related source-paper DOI from `zenodo_metadata_form.txt`.
+5. In the licence field, declare both applicable licences: **CC BY 4.0** and **MIT**. Keep the path-by-path scope clear by including `05_LICENSES/LICENSES.md` and the approval register in the archive and explaining the mapping in the description.
+6. Add the source article DOI `10.1093/ismeco/ycae122` with relation **IsDerivedFrom**.
+7. Include the public GitHub repository URL in the related links/alternate identifier or description.
+8. Preview the entire record, verify creator order, files, version, access and both licences, and publish only when every field is correct.
 
-## Publication gates
+Zenodo supports mixed-licence records, for example software under MIT and documentation/data under CC BY: https://help.zenodo.org/docs/deposit/describe-records/licenses/
 
-- Confirm all 15 creators, author order, names, affiliations and ORCID metadata.
-- Obtain rightsholder approval for the proposed MIT and CC BY licences for new content.
-- Retain original source attribution and CC BY 4.0 terms for the Azarbad–Junker workbook.
-- Review README claims and ensure the included scripts and outputs match the stated reproduction instructions.
-- Regenerate the SHA-256 manifest after the final file changes.
-- Do not state a DOI until Zenodo has published the record.
+A DOI is registered upon publication. Copy both the version-specific DOI and the concept DOI from the published record.
+
+## Part C — Update and resubmit the manuscript
+
+After Zenodo publication:
+
+1. Add the version-specific DOI and archive citation to the manuscript's Data and Code Availability statement and reference list.
+2. Update the response to the reviewer with the repository URL, DOI and a concise description of the archived materials.
+3. Update the root README and `CITATION.cff` with the Zenodo DOI. Do not change the files in the already published Zenodo version; if the archive itself needs a change after publication, issue a new version.
+4. Run the final cross-check of the manuscript, reviewer response, GitHub repository and Zenodo metadata before resubmission.
+
+## Optional GitHub-to-Zenodo integration
+
+Zenodo's automatic GitHub workflow archives releases as **Software** records. Do not enable it for this first deposit if the intended single primary record is a **Dataset**. A separate Software DOI may be created later only if the authors intentionally want a second, separately citable record.
+
+Official Zenodo GitHub guidance:
+- https://help.zenodo.org/docs/profile/linking-accounts/
+- https://help.zenodo.org/docs/github/enable-repository/
+- https://help.zenodo.org/docs/github/archive-software/github-upload/
