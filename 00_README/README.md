@@ -3,7 +3,7 @@
 **Version:** 1.0.0  
 **Prepared:** 24 November 2026  
 **Resource type proposed for Zenodo:** Dataset (mixed research-data and software package)  
-**Status:** Deposit-ready draft; Zenodo DOI not yet registered.
+**Status:** Author-team licence approval recorded; GitHub release and Zenodo publication remain pending.
 
 ## Purpose
 
@@ -15,7 +15,7 @@ This archive supports the manuscript *Microbial-Inoculation Effects and Fraction
 - `02_EMPIRICAL_ANALYSIS/`: reconstructed Python analysis script, dependencies, run manifests, output CSVs, and QA workbooks.
 - `03_NUMERICAL_VALIDATION/`: numerical-validation scripts, dependencies, run log, and the three output CSV files.
 - `04_FIGURES/`: the four figures used in the reconciled empirical Results section.
-- `05_LICENSES/`: attribution, licence mapping, and a proposed software licence requiring author/rightsholder confirmation.
+- `05_LICENSES/`: attribution, licence mapping, and a approved mixed-licence map, MIT licence text and author approval register.
 - `06_CHECKSUMS/`: SHA-256 manifest covering the archive files (excluding the manifest itself).
 
 ## Primary source and attribution
@@ -67,14 +67,11 @@ The original Colab notebook was unavailable. Therefore the empirical code is a t
 4. Several plant-trait categories contain only three or four studies; their intervals are unstable.
 5. Scalar numerical-verification tests do not validate the proposed crop–microbe–nitrogen model or justify crop-, country- or dose-specific recommendations.
 
-## Licensing
+## Licensing and author approval
 
-- **Original source workbook and derivative source-data citation:** CC BY 4.0, with attribution to Azarbad and Junker (2024).
-- **New scripts:** MIT is proposed as a permissive software licence, but it is not activated in this draft until the relevant copyright holders authorise it. The final Zenodo record must state the approved software licence.
-- **New derived outputs, figures and documentation:** proposed CC BY 4.0, subject to author confirmation.
-- Third-party software dependencies remain under their own licences.
+This archive uses a mixed-licence arrangement: CC BY 4.0 applies to the original source workbook and CSV conversion, project-authored outputs, figures and documentation; MIT applies only to the project-authored Python scripts in the two `scripts/` directories. The corresponding author reports written email approval from all 15 manuscript authors for public release and this file-scope arrangement. The approval register is `05_LICENSES/AUTHOR_APPROVAL_AND_RIGHTS_REGISTER.md`; original correspondence is retained privately. Third-party software dependencies remain under their own licences.
 
-Zenodo supports mixed-licence records. Before publishing, select the approved licences and retain the file/folder mapping in `05_LICENSES/LICENSES.md`. Do not treat the proposed MIT licence as effective unless author/rightsholder approval is confirmed.
+Zenodo supports mixed-licence records. Declare both CC BY 4.0 and MIT and preserve the file/folder mapping in `05_LICENSES/LICENSES.md`.
 
 ## Citation
 
