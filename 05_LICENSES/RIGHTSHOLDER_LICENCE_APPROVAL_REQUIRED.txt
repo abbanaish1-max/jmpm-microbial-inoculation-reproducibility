@@ -1,3 +1,0 @@
-PUBLICATION GATE
-
-The empirical source workbook is included under its source CC BY 4.0 terms with attribution. The new Python scripts are proposed for release under the MIT License, but the MIT licence is not effective until the relevant copyright holders authorise it. New figures, data outputs and documentation are proposed under CC BY 4.0, subject to confirmation. Do not publish the Zenodo record until the rightsholder-approved licence mapping has been confirmed and selected in Zenodo.
