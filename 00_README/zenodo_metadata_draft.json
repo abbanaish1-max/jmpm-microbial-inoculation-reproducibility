@@ -86,17 +86,23 @@
       "identifier": "10.1093/ismeco/ycae122",
       "scheme": "doi",
       "relation": "isDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/abbanaish1-max/jmpm-microbial-inoculation-reproducibility",
+      "scheme": "url",
+      "relation": "isSupplementTo"
     }
   ],
   "funding": [],
   "license_plan": {
     "mixed_license_upload": true,
     "source_data": "CC-BY-4.0",
-    "new_analysis_code": "MIT proposed; requires final approval by the relevant copyright holders before publication",
-    "new_outputs_documentation_figures": "CC-BY-4.0 proposed; confirm in the approved licence statement",
-    "zenodo_license_field": "Select both applicable licences in the Zenodo mixed-license interface after the software licence is authorised; map per-file scope in 05_LICENSES/LICENSES.md."
+    "new_analysis_code": "MIT (written author-team approval reported received from all 15 manuscript authors)",
+    "new_outputs_documentation_figures": "CC-BY-4.0 (written author-team approval reported received from all 15 manuscript authors)",
+    "zenodo_license_field": "Declare both CC-BY-4.0 and MIT; retain the path-by-path scope mapping in 05_LICENSES/LICENSES.md and the archived approval summary.",
+    "author_approval_record": "The corresponding author reports 15/15 written email approvals for public release and the per-file licence arrangement; correspondence is retained privately and summarised in 05_LICENSES/AUTHOR_APPROVAL_AND_RIGHTS_REGISTER.md."
   },
-  "doi_status": "Not yet reserved or registered. Zenodo assigns the version DOI and concept DOI on publication.",
-  "deposit_notes": "Draft metadata only; review creators, affiliations, licence mapping and description before publishing.",
+  "doi_status": "Not yet reserved or registered. Zenodo registers the version DOI and concept DOI when the record is published.",
+  "deposit_notes": "Metadata draft updated after the corresponding author reported receipt of written approval from all 15 authors. Before publication, verify the final GitHub release archive, creators, affiliations, both licences and checksum manifest.",
   "publication_date_note": "Set by Zenodo to the actual date of public publication."
 }
