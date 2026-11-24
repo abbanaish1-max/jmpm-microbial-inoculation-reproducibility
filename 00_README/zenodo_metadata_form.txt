@@ -1,0 +1,64 @@
+ZENODO RECORD METADATA — DRAFT
+
+Title
+JMPM Microbial-Inoculation Effects: Reconstructed Empirical Analysis and Numerical-Validation Reproducibility Package
+
+Resource type
+Dataset (mixed research-data and software package)
+
+Version
+1.0.0
+
+Access right
+Open access (subject to final licence authorisation)
+
+Description
+This versioned research package supports the manuscript “Microbial-Inoculation Effects and Fractional Dynamics: A Study-Level Secondary Analysis with Numerical Verification”. It contains the publisher-supplied Azarbad and Junker (2024) Supplementary Table S1 workbook and a value-preserving CSV export; the reconstructed Python workflow for study-first descriptive aggregation, bootstrap summaries, missingness diagnostics and five-fold study-grouped prediction; run manifests, dependencies, derived outputs and quality-assurance workbooks; and separate scripts and outputs for the specified constant-order and variable-order scalar numerical-verification tests. Four manuscript figures are also provided. The primary source workbook is included unchanged with attribution. The original Colab notebook was not recovered, so empirical analyses are a documented reconstruction, not a bit-for-bit rerun of the historical notebook. Published lnRR and sampling-variance V fields are retained as provided; they are not recalculated from primary-study means, standard deviations and sample sizes. The empirical data do not identify biological parameters for the proposed crop–microbe–nitrogen model, nor do the scalar numerical tests validate that biological model. See README and provenance notes for full methods, licensing and limitations.
+
+Creators (preserve this author order)
+1. Abubakar Sulaiman Muhammad
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+   ORCID: https://orcid.org/0009-0001-2186-6749
+2. Umar Muhammad Dauda
+   Affiliation: Department of Mathematics, Aliko Dangote University of Science and Technology, Wudil, Kano State, Nigeria
+3. Pramod Mehta
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+4. Karuna Laddha
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+5. Komal Prajapat
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+6. Najib Bello Halilu
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+7. Kabiru Isah
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+8. Muhammad Sabi’u Zakari
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+9. Firdausi Umar Muhammad
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+10. Adamu Musa Garba
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+11. Aminu Salisu Taambu
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+12. Habibu Muhammad Haris
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+13. Isah Tasi’u Basiru
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+14. Maryam Isah
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+15. Mahmud Dalha Mahmud
+   Affiliation: Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India
+
+Keywords
+microbial inoculation; plant traits; meta-analysis; log response ratio; grouped cross-validation; fractional differential equations; numerical verification; reproducible research
+
+Related identifier
+10.1093/ismeco/ycae122 — relation: IsDerivedFrom
+
+Funding
+No specific funding declared by the authors.
+
+License mapping
+Source workbook: CC BY 4.0. New code: MIT proposed, not effective until rightsholder approval. New outputs/figures/documentation: CC BY 4.0 proposed, subject to author confirmation. Zenodo supports mixed-license uploads; select and map each licence at deposit.
+
+DOI
+No DOI has been reserved or registered. Reserve a DOI in the Zenodo draft if needed; the DOI only registers upon publication. After publishing, add both the version-specific DOI and the concept DOI to the manuscript and repository citation files.

@@ -1,0 +1,21 @@
+variable,decision,reason
+Plant_Trait_categories,INCLUDE,Complete; 8 trait categories.
+Plant_family_name,INCLUDE,Complete; 11 botanical families; reduced dimensionality.
+Single_or_multiple_strains,INCLUDE,Complete; single strain versus consortium.
+Microbial_Domain,INCLUDE,Complete; broad bacterial/fungal domain.
+With_or_without_Stress,INCLUDE,Complete; experimental stress context.
+Seeds_sterilization,INCLUDE,Complete; includes explicit 'Not mentioned' level.
+Microbial_Source,INCLUDE,2.5% missing; training-fold mode imputation.
+Inoculation_method,INCLUDE,0.9% missing; training-fold mode imputation.
+Inoculum_density,INCLUDE,Categorical level only; not absolute dose.
+Experimental_conditions,INCLUDE,Complete; sterilized/unsterilized/field.
+Experimental_periods,INCLUDE,0.9% missing; categorical period bins.
+#Study_ID,GROUP ONLY,GroupKFold grouping variable; never a predictor.
+Paper,EXCLUDE,Publication identifier; identity leakage risk.
+lnRR,TARGET,Prediction outcome.
+V,EXCLUDE,"Sampling variance, not a biological moderator."
+Microbial_Phyla,EXCLUDE,Contains 'Consortium' as a non-phylum category.
+Taxonomic class/order/family/genus/species/strain,DESCRIPTIVE ONLY,Missingness and sparse levels.
+Plant model/genus/Latin name/cultivar,DESCRIPTIVE OR SENSITIVITY,Higher-cardinality/overlapping taxonomic information.
+Duration_of_incubation_group,EXCLUDE,Mixed numeric/category encoding and most observations unspecified.
+Soil chemistry fields,EXCLUDE,High missingness; electrical conductivity also needs unit harmonisation.

@@ -1,0 +1,102 @@
+{
+  "title": "JMPM Microbial-Inoculation Effects: Reconstructed Empirical Analysis and Numerical-Validation Reproducibility Package",
+  "resource_type": {
+    "type": "dataset"
+  },
+  "description": "This versioned research package supports the manuscript “Microbial-Inoculation Effects and Fractional Dynamics: A Study-Level Secondary Analysis with Numerical Verification”. It contains the publisher-supplied Azarbad and Junker (2024) Supplementary Table S1 workbook and a value-preserving CSV export; the reconstructed Python workflow for study-first descriptive aggregation, bootstrap summaries, missingness diagnostics and five-fold study-grouped prediction; run manifests, dependencies, derived outputs and quality-assurance workbooks; and separate scripts and outputs for the specified constant-order and variable-order scalar numerical-verification tests. Four manuscript figures are also provided. The primary source workbook is included unchanged with attribution. The original Colab notebook was not recovered, so empirical analyses are a documented reconstruction, not a bit-for-bit rerun of the historical notebook. Published lnRR and sampling-variance V fields are retained as provided; they are not recalculated from primary-study means, standard deviations and sample sizes. The empirical data do not identify biological parameters for the proposed crop–microbe–nitrogen model, nor do the scalar numerical tests validate that biological model. See README and provenance notes for full methods, licensing and limitations.",
+  "creators": [
+    {
+      "name": "Abubakar Sulaiman Muhammad",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India",
+      "orcid": "0009-0001-2186-6749"
+    },
+    {
+      "name": "Umar Muhammad Dauda",
+      "affiliation": "Department of Mathematics, Aliko Dangote University of Science and Technology, Wudil, Kano State, Nigeria"
+    },
+    {
+      "name": "Pramod Mehta",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Karuna Laddha",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Komal Prajapat",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Najib Bello Halilu",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Kabiru Isah",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Muhammad Sabi’u Zakari",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Firdausi Umar Muhammad",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Adamu Musa Garba",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Aminu Salisu Taambu",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Habibu Muhammad Haris",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Isah Tasi’u Basiru",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Maryam Isah",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    },
+    {
+      "name": "Mahmud Dalha Mahmud",
+      "affiliation": "Department of Mathematics, Mewar University, Gangrar, Chittorgarh, Rajasthan, India"
+    }
+  ],
+  "keywords": [
+    "microbial inoculation",
+    "plant traits",
+    "meta-analysis",
+    "log response ratio",
+    "grouped cross-validation",
+    "fractional differential equations",
+    "numerical verification",
+    "reproducible research"
+  ],
+  "language": "eng",
+  "version": "1.0.0",
+  "access_right": "open",
+  "publication_date": null,
+  "related_identifiers": [
+    {
+      "identifier": "10.1093/ismeco/ycae122",
+      "scheme": "doi",
+      "relation": "isDerivedFrom"
+    }
+  ],
+  "funding": [],
+  "license_plan": {
+    "mixed_license_upload": true,
+    "source_data": "CC-BY-4.0",
+    "new_analysis_code": "MIT proposed; requires final approval by the relevant copyright holders before publication",
+    "new_outputs_documentation_figures": "CC-BY-4.0 proposed; confirm in the approved licence statement",
+    "zenodo_license_field": "Select both applicable licences in the Zenodo mixed-license interface after the software licence is authorised; map per-file scope in 05_LICENSES/LICENSES.md."
+  },
+  "doi_status": "Not yet reserved or registered. Zenodo assigns the version DOI and concept DOI on publication.",
+  "deposit_notes": "Draft metadata only; review creators, affiliations, licence mapping and description before publishing.",
+  "publication_date_note": "Set by Zenodo to the actual date of public publication."
+}
